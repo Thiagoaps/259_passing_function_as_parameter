@@ -21,8 +21,9 @@ public class Program {
 
 		ProductService ps = new ProductService();
 		
-		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
- 
+		// double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
+		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'M');
+		
 		System.out.println("Sum = " + String.format("%.2f", sum));
 
 	}
